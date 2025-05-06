@@ -19,6 +19,8 @@
 │   └── (通过上传添加的文件)
 ├── js/                          # JavaScript文件目录
 │   └── remarkable.js            # 创建的remarkable.js文件
+├── assets/                      # 静态资源
+│   └── Demo.png                 # 示例截图
 ├── LICENSE                      # 项目许可证文件
 ├── README.md                    # 项目说明文件
 ├── REMEDE_ch.md                 # 创建的REMEDE_ch.md文件
@@ -28,15 +30,19 @@
 └── stream.php                   # 流处理PHP文件
 ```
 
-各文件职责说明：
-
-- **index.html**：示例页面，展示插件集成效果及基本交互逻辑；便于用户预览前端样式与布局。
-- **deepseek-chatbot.php**：插件主文件，包含插件信息、激活钩子和跨域访问配置，确保 API 调用的安全性与数据传输的稳定性。
-- **assets/**：存放前端静态资源，确保样式和交互行为独立管理，方便后续调整。
-- **includes/**：包含管理设置和前台接口代码，分别实现后台配置页面和用户前端的 AJAX 请求处理。
-
 ### 3. 环境要求与依赖
+**服务器要求**
+- PHP >= 7.4（推荐8.1+）
+- 启用以下PHP扩展：curl、json、mbstring
+- Web服务器（Apache/Nginx）支持SSE长连接
 
+**前端依赖**
+- jQuery 3.6.0+
+- Markdown解析器（内置remarkable.js）
+
+**API要求**
+- 有效的腾讯云API密钥
+- 已创建的知识库应用ID
 
 
 ### 4. 安装与部署
