@@ -6,8 +6,9 @@
 ### 1. 项目概述
 
 **Tencent-LKE-Demo** 大模型知识引擎（LLM Knowledge Engine），是面向企业客户及合作伙伴的，基于大语言模型的知识应用构建平台，结合企业专属数据，提供知识问答等应用范式，更快更高效地完成大模型应用的构建，推动大语言模型在企业服务场景的应用落地。该项目使用HTTP SSE方式进行知识库模型的流式调用 详见 [示例页面](https://faide.top/myproject/index.php)。
+由于Tencent-LKE目前并未开放OpenAI API，因此根据其接口文档简要实现其Demo页面。
 
-<img src="https://github.com/Faide-cyber/deepseek-chatbot/blob/main/assets/demo.png" width="600px">
+<img src="https://github.com/Faide-cyber/Tencent-LKE-Demo/blob/main/assets/Demo.png" width="800px">
 
 ### 2. 系统架构与文件结构
 
@@ -36,18 +37,16 @@
 
 ### 3. 环境要求与依赖
 
-- **WordPress**：确保运行环境为最新稳定版的 WordPress，当前为6.7.2。
-- **PHP**：最低支持 PHP 7.2 及以上版本，建议使用最新版本以获得更好的性能与安全性。
-- **DeepSeek API**：需申请 DeepSeek API Key，并配置知识库内容，详见 [DeepSeek API 文档](https://api-docs.deepseek.com/zh-cn/api/deepseek-api/)。
+
 
 ### 4. 安装与部署
 
 #### 4.1 下载与安装
 
 1. **获取源码**
-    从 GitHub 仓库克隆或下载最新版本源码，并将 `/deepseek-chatbot/` 目录上传至 WordPress 插件目录。
-2. **插件激活**
-    登录 WordPress 后台，进入【插件】页面，找到 “DeepSeek Chatbot” 插件并点击激活。插件激活时会自动注册相关配置项（如 API Key 和知识库内容）。
+    
+2.
+    
 3. **示例页面配置**
     将 `/index.html` 文件部署至网站根目录，供预览插件效果及前端交互展示。
 
@@ -93,7 +92,7 @@
 
 ### 8. 免责声明
 
-**DeepSeek Chatbot**（以下简称“本项目”）（以下简称“本项目”）仅供学习和研究使用，禁止将其用于任何非法用途。如果您选择使用本项目的任何部分，您必须遵守所有相关法律和规定，并承担由此产生的所有责任。
+**Tencent-LKE-Demo**（以下简称“本项目”）（以下简称“本项目”）仅供学习和研究使用，禁止将其用于任何非法用途。如果您选择使用本项目的任何部分，您必须遵守所有相关法律和规定，并承担由此产生的所有责任。
 
 作者不对因使用本项目而导致的任何损失或损害负责。如果您选择使用本项目的任何部分，您应该自己承担所有风险和责任。
 
@@ -107,8 +106,8 @@
 
 - **最新源码与文档**
    请访问 GitHub 仓库获取最新的源码及文档更新：https://github.com/Faide-cyber/
-- **DeepSeek API 相关文档**
-   详见 [DeepSeek API 文档](https://api-docs.deepseek.com/zh-cn/api/deepseek-api/)
+- **Tencent-LKE-Demo API 相关文档**
+   详见 [对话端接口文档（HTTP SSE）](https://cloud.tencent.com/document/product/1759/105561/)
 
 ### 10. 联系方式
 
