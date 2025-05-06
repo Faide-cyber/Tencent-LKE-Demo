@@ -1,11 +1,11 @@
-# deepseek-chatbot
+# Tencent-LKE-Demo
 
-#### [English Doc](https://github.com/Faide-cyber/deepseek-chatbot)
+#### [English Doc](https://github.com/Faide-cyber/Tencent-LKE-Demo)
 
 ![Static Badge](https://img.shields.io/badge/%40Github-Faide-%2300FFFF) ![Static Badge](https://img.shields.io/badge/PlatForm-Windows-%238c37dc) ![Static Badge](https://img.shields.io/badge/Version-1.0.0-%23e87435) ![Static Badge](https://img.shields.io/badge/License-GNU3.0-%2314bbc1)
 ### 1. 项目概述
 
-**DeepSeek Chatbot** 是一个基于 DeepSeek V3/R1 聊天模型构建的 WordPress 插件。项目主要面向高校辅导员，提供智能问答、对话历史管理、跨域数据交互以及可定制的前后端配置。插件整体设计注重模块化和安全性，便于后续功能扩展与维护。详见 [示例页面](https://faide.top/model/index.html)。
+**Tencent-LKE-Demo** 大模型知识引擎（LLM Knowledge Engine），是面向企业客户及合作伙伴的，基于大语言模型的知识应用构建平台，结合企业专属数据，提供知识问答等应用范式，更快更高效地完成大模型应用的构建，推动大语言模型在企业服务场景的应用落地。该项目使用HTTP SSE方式进行知识库模型的流式调用 详见 [示例页面](https://faide.top/myproject/index.php)。
 
 <img src="https://github.com/Faide-cyber/deepseek-chatbot/blob/main/assets/demo.png" width="600px">
 
@@ -14,15 +14,17 @@
 项目主要包含以下几个部分：
 
 ```
-/index.html
-/deepseek-chatbot/
-├── deepseek-chatbot.php        // 插件入口文件，负责初始化插件、注册钩子及加载依赖模块
-├── assets/
-│   ├── style.css               // 聊天窗口及相关前端组件样式定义
-│   └── script.js               // 前端交互逻辑，包含历史会话加载及消息发送处理
-└── includes/
-    ├── admin-settings.php      // 后台管理页面与设置项的实现，含 API Key 与知识库配置
-    └── chatbot-frontend.php    // 前台展示及 AJAX 接口实现，负责与 DeepSeek API 的交互
+├── css/                         # CSS文件目录
+│   └── (通过上传添加的文件)
+├── js/                          # JavaScript文件目录
+│   └── remarkable.js            # 创建的remarkable.js文件
+├── LICENSE                      # 项目许可证文件
+├── README.md                    # 项目说明文件
+├── REMEDE_ch.md                 # 创建的REMEDE_ch.md文件
+├── index.php                    # 主入口PHP文件
+├── phpinfo.php                  # PHP信息展示文件
+├── setsession.php               # 会话设置PHP文件
+└── stream.php                   # 流处理PHP文件
 ```
 
 各文件职责说明：
